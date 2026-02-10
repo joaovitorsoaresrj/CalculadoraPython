@@ -1,7 +1,13 @@
 rodando = True
 pergunta_continuar = True
 entrar_continuar = True
-
+primeiro_numero = None
+segundo_numero = None
+primeiro_numero_inteiro = 0
+segundo_numero_inteiro = 0
+entrar = None
+decisao = None
+continuar = None
 
 
 while rodando:
