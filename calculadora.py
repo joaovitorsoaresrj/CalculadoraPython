@@ -27,16 +27,18 @@ while rodando:
             while enquanto_mesmos_numeros:
                 decisao = input("Qual operação deseja realizar com esses números? " \
                 "(digite soma, multiplicação ou divisão) ")
+                
+                texto_resultado = (f"A {decisao} entre esses números é igual a ")
 
                 if decisao == "soma":
-                    print(f"A soma entre esses números é igual a {primeiro_numero_inteiro + segundo_numero_inteiro}.")
+                    print(f"{texto_resultado} {primeiro_numero_inteiro + segundo_numero_inteiro}.")
                 elif decisao == "multiplicação":
-                    print(f"A multiplicação entre esses números é igual a {primeiro_numero_inteiro * segundo_numero_inteiro}.")
+                    print(f"{texto_resultado} {primeiro_numero_inteiro * segundo_numero_inteiro}.")
                 elif decisao == "divisão":
                     if segundo_numero_inteiro == 0:
                         print("Não é possível dividir por zero.")
                     else:
-                        print(f"A divisão entre esses números é igual a {primeiro_numero_inteiro / segundo_numero_inteiro}.")
+                        print(f"{texto_resultado} {primeiro_numero_inteiro / segundo_numero_inteiro}.")
                 else:
                     print("Comando inválido. Digite apenas 'soma', 'multiplicação' ou 'divisão'. ")
                     continue
